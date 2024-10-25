@@ -1,0 +1,115 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de colores de la Universidad */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #006747; /* Verde representativo */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #FFD100; /* Amarillo representativo */
+    color: #006747;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #006747;
+    color: #FFD100;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #006747;
+    margin-bottom: 10px;
+}
+
+/* Barra de Progreso */
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar span {
+    color: #006747;
+    font-weight: bold;
+}
+
+/* Enlaces */
+a {
+    color: #006747;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Formulario de Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    align-self: flex-start;
+}

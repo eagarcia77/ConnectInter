@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones de Registro y Compra en CONNECT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página de Inicio -->
+    <header>
+        <h1>Universidad Interamericana de Puerto Rico - Recinto de Guayama</h1>
+	<h1>Instrucciones de Registro y Compra en CONNECT</h1>
+        <p>Guía para el acceso y registro en el sistema CONNECT para estudiantes de Contabilidad.</p>
+    </header>
+
+    <!-- Progreso de Pasos -->
+    <div class="progress-bar" aria-label="Progreso del proceso">
+        <span>1. Registro</span>
+        <span>2. Compra</span>
+        <span>3. Acceso Temporal</span>
+    </div>
+
+    <!-- Sección de Registro -->
+    <section id="registro">
+        <h2>Instrucciones de Registro</h2>
+        <p>Para registrarse, siga el enlace de registro de su sección y utilice su correo electrónico para completar el proceso.</p>
+        <a href="https://connect.mheducation.com/class/e-rivera-agosto-83871" target="_blank" class="button" aria-label="Ir a la página de registro de Connect para el curso de Contabilidad">Ir a Registro</a>
+        <p>¿Problemas para registrarse? <a href="https://www.mheducation.com/highered/support/connect/first-day-of-class/standalone.html" target="_blank">Visite el soporte</a>.</p>
+    </section>
+
+    <!-- Sección de Compra -->
+    <section id="compra">
+        <h2>Instrucciones de Compra</h2>
+        <ol>
+            <li>Visite <a href="https://www.universitybookspr.com/home" target="_blank">University Books</a> y coloque el ISBN: <strong>9798219021350</strong> en la barra de búsqueda.</li>
+            <li>Siga el proceso de compra y obtenga su código de acceso. El precio es de <strong>$50.00</strong> por semestre.</li>
+        </ol>
+        <p>Nota: No compre directamente en CONNECT para obtener el precio especial para este curso.</p>
+        <button onclick="confirmPurchase()" class="button" aria-label="Confirmar la compra del código de acceso">Confirmar Compra</button>
+    </section>
+
+    <!-- Acceso Temporal -->
+    <section id="acceso-temporal">
+        <h2>Acceso Temporal</h2>
+        <p>Si no está listo para la compra, puede activar el acceso temporal de 14 días. Recuerde completar la compra antes de que venza el acceso temporal.</p>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+        <h2>¿Necesitas ayuda?</h2>
+        <form action="/submit" method="post">
+            <label for="email">Tu correo:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Universidad Interamericana de Puerto Rico - Recinto de Guayama. Todos los derechos reservados.</p>
+        <p><a href="https://www.universitybookspr.com/home" target="_blank">University Books</a> | <a href="https://www.mheducation.com/highered/support/connect/first-day-of-class/standalone.html" target="_blank">Soporte de McGraw Hill</a></p>
+    </footer>
+
+    <script>
+        function confirmPurchase() {
+            alert("Compra realizada con éxito. ¡Bienvenido a CONNECT!");
+        }
+    </script>
+</body>
+</html>
